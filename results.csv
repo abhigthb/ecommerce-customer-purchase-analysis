@@ -1,0 +1,22 @@
+Number,Elapsed,Statement,Feedback,Rows
+1,1.13,DROP TABLE purchases CASCADE CONSTRAINTS,Table dropped.,0
+2,0.04,"CREATE TABLE purchases ( 
+    customer_id NUMBER PRIMARY KEY",Table created.,0
+3,0.03,"INSERT INTO purchases VALUES (1, 'Arjun', 'Pune', 'Mobile', ",1 row(s) inserted.,1
+4,0.00,"INSERT INTO purchases VALUES (2, 'Sneha', 'Mumbai', 'Laptop'",1 row(s) inserted.,1
+5,0.01,"INSERT INTO purchases VALUES (3, 'Akash', 'Pune', 'Headphone",1 row(s) inserted.,1
+6,0.00,"INSERT INTO purchases VALUES (4, 'Ritu', 'Nagpur', 'Tablet',",1 row(s) inserted.,1
+7,0.00,"INSERT INTO purchases VALUES (5, 'Meena', 'Mumbai', 'Mobile'",1 row(s) inserted.,1
+8,0.00,COMMIT,Statement processed.,0
+9,0.02,SELECT * FROM purchases,5 rows selected.,5
+10,0.01,"SELECT  
+    customer_id, 
+    customer_name, 
+    city, 
+  ",5 rows selected.,5
+11,0.01,"SELECT  
+    product, 
+    SUM(quantity) AS total_quantity_s",4 rows selected.,4
+12,0.01,"SELECT  
+    city, 
+    SUM(quantity * price) AS total_reven",3 rows selected.,3
