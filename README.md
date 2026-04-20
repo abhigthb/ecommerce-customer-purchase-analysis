@@ -39,4 +39,3 @@ Analyze customer purchase data to identify top customers, popular products, and 
 ## Submitted By
 Name: Abhinav Sharma  
 Roll No: 2305756 
-Batch: B.Tech CSE
